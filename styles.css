@@ -1,0 +1,109 @@
+/* styles.css */
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif; /* Modern font */
+    background: linear-gradient(135deg, #4568dc, #b06ab3); /* Gradient background */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .container {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px); /* Glassmorphism effect */
+    border-radius: 15px;
+    padding: 30px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+  }
+  
+  input[type="text"] {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+  }
+  
+  input[type="text"]:focus {
+    outline: none;
+    background: rgba(255, 255, 255, 0.3);
+  }
+  
+  button {
+    padding: 15px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    background: #4568dc;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  button:hover {
+    background: #364f9c;
+  }
+  
+  #prayerTimes {
+    margin-top: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+  }
+  
+  #prayerTimes h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  #timesList {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  #timesList li {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    font-size: 1rem;
+  }
+  
+  #timesList i {
+    margin-right: 10px;
+    font-size: 1.2rem;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  #error {
+    color: #ff4d4d;
+    margin-top: 10px;
+    font-size: 0.9rem;
+  }
